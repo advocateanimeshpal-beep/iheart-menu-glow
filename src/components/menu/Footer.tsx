@@ -8,7 +8,7 @@ export function Footer() {
       <div className="mx-auto max-w-md">
         <h3 className="font-display text-3xl font-bold text-foreground">iheart</h3>
         <p className="font-display text-base italic" style={{ color: "var(--color-primary)" }}>
-          café · varanasi
+          café · haldwani &amp; nainital
         </p>
 
         <div className="divider-edison my-6 mx-auto w-32" />
@@ -16,7 +16,7 @@ export function Footer() {
         <div className="space-y-3 text-sm text-muted-foreground">
           <div className="flex items-start justify-center gap-2">
             <MapPin size={15} className="mt-0.5 shrink-0" style={{ color: "var(--color-primary)" }} />
-            <span>Saket Nagar Colony, Naria, Varanasi</span>
+            <span>Haldwani &amp; Nainital, Uttarakhand</span>
           </div>
           <div className="flex items-center justify-center gap-2">
             <Clock size={15} style={{ color: "var(--color-primary)" }} />

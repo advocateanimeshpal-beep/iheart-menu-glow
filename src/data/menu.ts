@@ -1,8 +1,8 @@
-import frappeImg from "@/assets/dish-frappe.jpg";
+import frappeImg from "@/assets/cafe-frappe-pour.jpg";
 import waffleImg from "@/assets/dish-chicken-waffles.jpg";
 import brownieImg from "@/assets/dish-brownie.jpg";
 import burgerImg from "@/assets/dish-burger.jpg";
-import coffeeImg from "@/assets/dish-coffee.jpg";
+import coffeeImg from "@/assets/cafe-espresso.jpg";
 import indianImg from "@/assets/dish-indian.jpg";
 
 export type DietType = "veg" | "non-veg";
