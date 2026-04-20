@@ -71,6 +71,8 @@ function Index() {
     <main className="mx-auto w-full max-w-2xl px-4 pb-8">
       <Hero />
 
+      <StoryStrip />
+
       <QuickSwitchNav active={activeCat} onSelect={handleSelectCat} />
 
       {/* Diet filter chips */}
