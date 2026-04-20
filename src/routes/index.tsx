@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { Leaf, Drumstick } from "lucide-react";
 import { categories, type DietType, type MenuItem } from "@/data/menu";
 import { Hero } from "@/components/menu/Hero";
+import { StoryStrip } from "@/components/menu/StoryStrip";
 import { QuickSwitchNav } from "@/components/menu/QuickSwitchNav";
 import { ItemCard } from "@/components/menu/ItemCard";
 import { ItemModal } from "@/components/menu/ItemModal";
@@ -11,16 +12,17 @@ import { Footer } from "@/components/menu/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "iheart Café Varanasi · Digital Menu" },
+      { title: "iheart Café · Best Coffee in Haldwani & Nainital" },
       {
         name: "description",
         content:
-          "Industrial-chic café in Varanasi. Slow-brewed coffee, hand-tossed pasta, North Indian classics and house-baked desserts under the warm Edison glow.",
+          "iheart Café — the best coffee in Haldwani and Nainital. Specialty espresso, wood-fired pizzas, crispy snacks and freshly baked treats in a cosy industrial space with free Wi-Fi.",
       },
-      { property: "og:title", content: "iheart Café Varanasi · Digital Menu" },
+      { property: "og:title", content: "iheart Café · Best Coffee in Haldwani & Nainital" },
       {
         property: "og:description",
-        content: "Edison glow, exposed brick, warm food. Browse the iheart café menu.",
+        content:
+          "Specialty espresso, wood-fired pizzas and fresh bakery in a copper-pipe Edison-glow café. Perfect for brunch, work or catch-ups.",
       },
     ],
   }),

@@ -3,57 +3,57 @@ import { MapPin } from "lucide-react";
 
 export function Hero() {
   return (
-    <header className="relative -mx-4 mb-2 h-[78vh] min-h-[520px] overflow-hidden">
+    <header className="relative -mx-4 mb-2 h-[82vh] min-h-[560px] overflow-hidden">
       <img
         src={heroImg}
-        alt="iheart Café Varanasi interior with Edison bulbs and exposed brick walls"
+        alt="iheart Café interior with copper Edison-bulb piping, exposed red brick wall and wooden tables"
         width={1920}
-        height={1080}
+        height={1280}
         className="absolute inset-0 h-full w-full object-cover"
-        style={{ filter: "blur(2px) brightness(0.55)" }}
+        style={{ filter: "brightness(0.62) saturate(1.05)" }}
       />
-      {/* Edison glow overlay */}
+      {/* Warm Edison glow overlay — copper/amber from above, deep brick fade to bg below */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(ellipse at 50% 30%, oklch(0.78 0.165 65 / 0.35) 0%, transparent 55%), linear-gradient(to bottom, oklch(0.18 0.012 50 / 0.4) 0%, oklch(0.18 0.012 50 / 0.7) 60%, var(--color-background) 100%)",
+            "radial-gradient(ellipse at 50% 18%, oklch(0.82 0.17 70 / 0.45) 0%, transparent 55%), linear-gradient(to bottom, oklch(0.18 0.012 50 / 0.25) 0%, oklch(0.18 0.012 50 / 0.55) 55%, var(--color-background) 100%)",
         }}
       />
 
-      {/* Decorative Edison filaments */}
-      <div className="absolute inset-x-0 top-8 flex justify-around opacity-90 sm:top-12">
-        {[0, 1, 2, 3, 4].map((i) => (
+      {/* Subtle bulb sparkle row to echo the ceiling pipework */}
+      <div className="pointer-events-none absolute inset-x-0 top-6 flex justify-around opacity-90 sm:top-10">
+        {[0, 1, 2, 3, 4, 5].map((i) => (
           <div
             key={i}
-            className="filament-pulse flex flex-col items-center"
-            style={{ animationDelay: `${i * 0.3}s` }}
+            className="filament-pulse"
+            style={{ animationDelay: `${i * 0.35}s` }}
           >
-            <div className="h-12 w-px bg-foreground/20 sm:h-20" />
             <div
-              className="h-3 w-3 rounded-full sm:h-4 sm:w-4"
+              className="h-2.5 w-2.5 rounded-full sm:h-3 sm:w-3"
               style={{
-                background: "var(--gradient-glow)",
-                boxShadow: "0 0 24px oklch(0.86 0.18 75 / 0.9), 0 0 48px oklch(0.78 0.165 65 / 0.7)",
+                background: "oklch(0.92 0.16 80)",
+                boxShadow:
+                  "0 0 22px oklch(0.86 0.18 75 / 0.95), 0 0 44px oklch(0.78 0.165 65 / 0.7)",
               }}
             />
           </div>
         ))}
       </div>
 
-      <div className="relative z-10 flex h-full flex-col items-center justify-end px-6 pb-12 text-center">
+      <div className="relative z-10 flex h-full flex-col items-center justify-end px-6 pb-14 text-center">
         <p
           className="mb-3 text-[11px] font-semibold uppercase tracking-[0.4em]"
           style={{ color: "var(--color-primary)" }}
         >
-          Est. Varanasi
+          Haldwani · Nainital
         </p>
         <h1 className="font-display text-5xl font-bold leading-none tracking-tight text-foreground sm:text-6xl">
           iheart
         </h1>
         <p
-          className="mt-1 font-display text-xl italic text-foreground/90 sm:text-2xl"
-          style={{ textShadow: "0 2px 12px oklch(0 0 0 / 0.6)" }}
+          className="mt-1 font-display text-xl italic text-foreground/95 sm:text-2xl"
+          style={{ textShadow: "0 2px 14px oklch(0 0 0 / 0.7)" }}
         >
           café
         </p>
@@ -63,13 +63,14 @@ export function Hero() {
           style={{ background: "var(--gradient-glow)" }}
         />
 
-        <p className="max-w-xs text-sm leading-relaxed text-muted-foreground">
-          Where Edison glow meets exposed brick — a slow corner of the holy city.
+        <p className="max-w-sm text-sm leading-relaxed text-foreground/85">
+          The best coffee in Haldwani &amp; Nainital — espresso-forward,
+          wood-fired pizzas and freshly baked treats under the copper-pipe glow.
         </p>
 
-        <div className="mt-5 inline-flex items-center gap-1.5 text-xs text-foreground/70">
+        <div className="mt-5 inline-flex items-center gap-1.5 text-xs text-foreground/75">
           <MapPin size={13} style={{ color: "var(--color-primary)" }} />
-          Saket Nagar Colony, Naria
+          Haldwani · Nainital, Uttarakhand
         </div>
       </div>
     </header>
