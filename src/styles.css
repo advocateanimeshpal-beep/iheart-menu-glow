@@ -162,6 +162,7 @@
   }
   .text-edison {
     color: var(--color-primary);
+    text-shadow: 0 0 20px oklch(0.78 0.165 65 / 0.5);
   }
   .divider-edison {
     background: linear-gradient(
