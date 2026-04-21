@@ -16,9 +16,9 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "iheart Café — the best coffee in Haldwani and Nainital. Specialty espresso, wood-fired pizzas, crispy snacks and freshly baked treats in a cosy industrial space with free Wi-Fi.",
+          "iheart Café — the best coffee in Varanasi. Specialty espresso, wood-fired pizzas, crispy snacks and freshly baked treats in a cosy industrial space with free Wi-Fi.",
       },
-      { property: "og:title", content: "iheart Café · Best Coffee in Haldwani & Nainital" },
+      { property: "og:title", content: "iheart Café · Best Coffee in Varanasi" },
       {
         property: "og:description",
         content:
