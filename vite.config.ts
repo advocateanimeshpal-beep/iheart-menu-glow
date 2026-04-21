@@ -9,6 +9,10 @@ import tsConfigPaths from 'vite-tsconfig-paths'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  base: '/iheart-menu-glow/',
+  server: {
+    preset: 'github_pages',
+  },
   plugins: [
     tsConfigPaths(),
     tailwindcss(),
